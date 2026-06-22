@@ -1,0 +1,157 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      body {
+        text-align: center;
+        min-height: 100vh;
+        background: #f8f9fa;
+      }
+
+      h1 {
+        background: cornflowerblue;
+        color: #fff;
+        padding: 1rem;
+        font-size: clamp(2rem, 4vw, 2.5rem);
+      }
+
+      .choices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 4rem 1rem;
+      }
+
+      .choice {
+        width: 150px;
+        height: 150px;
+        border: none;
+        border-radius: 50%;
+        border: 6px solid #000;
+        font-size: 5rem;
+        color: #fff;
+        cursor: pointer;
+        transition: transform .3s ease;
+      }
+
+      .choice:hover {
+        transform: scale(1.08);
+      }
+
+      .choice:focus {
+        outline: 3px solid #333;
+        outline-offset: 4px;
+      }
+
+      #rock {
+        background: rgb(93, 194, 228);
+      }
+
+      #paper {
+        background: rgb(249, 122, 203);
+      }
+
+      #scissors {
+        background: rgb(111, 211, 150);
+      }
+
+      .score-board {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+      }
+
+      #user-score,
+      #comp-score {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .msg-container {
+        margin-top: 3rem;
+      }
+
+      #msg {
+        display: inline-block;
+        background: cornflowerblue;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.3rem;
+        max-width: 90%;
+      }
+
+      /* Tablet */
+      @media (max-width:768px) {
+
+        .choice {
+          width: 120px;
+          height: 120px;
+          font-size: 4rem;
+        }
+
+        .score-board {
+          gap: 2rem;
+        }
+
+        #msg {
+          font-size: 1.1rem;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width:480px) {
+
+        .choices {
+          gap: 1rem;
+          margin: 2rem 1rem;
+        }
+
+        .choice {
+          width: 90px;
+          height: 90px;
+          font-size: 3rem;
+          border-width: 4px;
+        }
+
+        .score-board {
+          gap: 1.5rem;
+          font-size: 1rem;
+        }
+
+        #user-score,
+        #comp-score {
+          font-size: 2rem;
+        }
+
+        #msg {
+          font-size: 1rem;
+          padding: .8rem 1rem;
+        }
+      }
+
+      #reset-btn {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 10px;
+        background: cornflowerblue;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+        
+      }
+
+      #reset-btn:hover {
+        transform: scale(1.05);
+      }
