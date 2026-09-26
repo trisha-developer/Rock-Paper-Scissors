@@ -15,9 +15,9 @@ A simple Rock Paper Scissors game built using **HTML, CSS, and JavaScript**.
 * Displays game result
 * Simple and clean interface
 
-## 🚀 Live Demo
+## 🚀 Deployment
 
-
+<a href="https://trisha-developer.github.io/Rock-Paper-Scissors/">CLick Here!</a>
 
 ## 📂 Project
 
